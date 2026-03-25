@@ -1,0 +1,85 @@
+:root {
+  --bg: #070812;
+  --card-bg: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.02),
+    rgba(255, 255, 255, 0.01)
+  );
+  --accent: #ff6b8a;
+  --sky: #2d5478;
+  --sky-dark: #142736;
+  --sunset: #ff7aa2;
+  --night: #0b1220;
+  --text: #e9eef8;
+  --muted: #9fb0c8;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+/* Responsive typography and spacing */
+:root {
+  --base-font-size: 16px;
+}
+
+html {
+  font-size: var(--base-font-size);
+}
+
+@media (max-width: 420px) {
+  :root {
+    --base-font-size: 14px;
+  }
+}
+
+@media (min-width: 980px) {
+  :root {
+    --base-font-size: 17px;
+  }
+}
+
+/* make images responsive by default */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Utility spacing for small screens */
+.card {
+  width: 100%;
+}

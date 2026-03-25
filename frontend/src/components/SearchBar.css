@@ -1,0 +1,31 @@
+form {
+  display: flex;
+  align-items: center;
+  padding: 10px 14px;
+  margin-bottom: 18px;
+  max-width: 480px;
+  width: 100%;
+
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 8px 10px;
+  background: transparent;
+  width: 100%;
+  color: var(--text);
+}
+
+.search-input::placeholder {
+  color: var(--muted);
+}
+
+.search-icon {
+  margin-right: 8px;
+  opacity: 0.9;
+}
